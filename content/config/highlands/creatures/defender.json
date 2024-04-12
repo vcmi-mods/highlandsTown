@@ -1,0 +1,106 @@
+{
+  "bdefender": {
+    "name": {
+      "plural": "Defenders",
+      "singular": "Defender"
+    },
+    "advMapAmount": {
+ "max" : 50,
+ "min" : 20
+    },
+    "faction": "highlands",
+    "aiValue": 99,
+    "attack": 2,
+    "cost": {
+      "gold": 40
+    },
+    "damage": {
+ "max" : 3,
+ "min" : 1
+    },
+    "defense": 5,
+    "fightValue": 109,
+    "graphics": {
+      "animation": "highlands/battle/creatures/CFG1.def",
+      "map": "highlands/map/creatures/AVWC150.def",
+      "iconSmall": "highlands/iconsSmall/creatures/CPRS150B.bmp",
+      "iconLarge": "highlands/iconsBig/creatures/CPRL150B.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "growth": 14,
+    "hitPoints": 8,
+    "horde": 6,
+    "level": 1,
+    "upgrades": [ "bmountainguard" ],
+    "sound": {
+      "attack": "highlands/FG1ATTK.wav",
+      "defend": "highlands/FG1DFND.wav",
+      "killed": "highlands/FG1KILL.wav",
+      "move": "highlands/FG1MOVE.wav",
+      "wince": "highlands/FG1WNCE.wav"
+    },
+    "speed": 4,
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+	}
+  }

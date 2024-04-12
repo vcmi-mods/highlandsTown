@@ -1,0 +1,156 @@
+{
+	"amazonHigh":
+	{
+		"name" :
+		{
+			"plural" : "Amazons",
+			"singular" : "Amazon"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 4
+		},
+		"faction" : "highlands",
+		"aiValue" : 6216,
+		"attack" : 19,
+		"cost" :
+		{
+			"gold" : 2400,
+			"gems": 1
+		},
+		"damage" :
+		{
+			 "max" : 40,
+			 "min" : 30
+		},
+		"defense" : 20,
+		"fightValue" : 4952,
+    "graphics": {
+      "animation": "highlands/battle/creatures/CFG8.def",
+      "map": "highlands/map/creatures/AVWCFG8.def",
+      "iconSmall": "highlands/iconsSmall/creatures/CPRSex01.bmp",
+      "iconLarge": "highlands/iconsBig/creatures/CPRLex01.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      },
+      "missile" :
+			{
+				"projectile" : "PPLIZAX.DEF",
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+    },
+		"growth" : 1,
+		"hitPoints" : 160,
+    "level": 7,
+    "shots": 3,
+		"sound" :
+		{
+			"attack": "highlands/CFG8ATTK.wav",
+			"defend": "highlands/CFG8DFND.wav",
+			"killed": "BLESS",
+			"shoot": "highlands/CFG8SHOT.wav",
+			"move": "highlands/CFG8MOVE.wav",
+			"wince": "highlands/CFG8WNCE.wav"
+		},
+		"speed" : 7,
+		"upgrades":
+		[
+			"valkyrieHigh"
+		],
+    "abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"castsBless" :
+			{
+				"type" : "ENCHANTER",
+				"subtype" : "spell.bless",
+				"val" : 3,
+				"addInfo" : 3
+			},
+			"basicSlayer" : { "type" : "KING", "val" : 1, "valueType" : "ADDITIVE_VALUE" },
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+		}	
+	}

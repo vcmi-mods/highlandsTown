@@ -1,0 +1,145 @@
+{
+	"bmammoth":
+	{
+		"name" :
+		{
+			"plural" : "Thanes",
+			"singular" : "Thane"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 12,
+			 "min" : 5
+		},
+		"faction" : "highlands",
+		"aiValue" : 1974,
+		"attack" : 15,
+		"cost" :
+		{
+			"gold" : 1000
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 16
+		},
+		"defense" : 16,
+		"fightValue" : 1704,
+    "graphics": {
+      "animation": "highlands/battle/creatures/CFG6.def",
+      "map": "highlands/map/creatures/AVWC160.def",
+      "iconSmall": "highlands/iconsSmall/creatures/CPrS160B.bmp",
+      "iconLarge": "highlands/iconsBig/creatures/CPrL160B.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1,
+        "attack": 1,
+        "idle": 10
+      },
+      "missile" :
+			{
+				"projectile" : "CPRGOGX.DEF",
+				"attackClimaxFrame" : 16,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+    },
+		"growth" : 2,
+		"hitPoints" : 90,
+    "level": 6,
+		"upgrades":
+		[
+			"bmammothlord"
+		],
+		"sound" :
+		{
+			"attack" : "GOGGATTK.wav",
+			"defend" : "highlands/FG6DFND.wav",
+            "killed": "highlands/FG6KILL.wav",
+            "shoot": "highlands/FG6SHOT.wav",
+			"move" : "highlands/FG6MOVE.wav",
+			"startMoving": "FELMATTK.wav",
+			"endMoving": "FELMATTK.wav",
+			"wince" : "highlands/FG6WNCE.wav"
+ 		},
+		"speed" : 8,
+    "abilities":
+		{
+		"FLYING_ARMY" :
+			{
+				"type": "FLYING",
+				"subtype" : "movementTeleporting"
+			},
+			"immuneToFire" :
+			{
+				"type" : "SPELL_SCHOOL_IMMUNITY",
+				"subtype" : "fire"
+			}
+	    },
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+	}
+}

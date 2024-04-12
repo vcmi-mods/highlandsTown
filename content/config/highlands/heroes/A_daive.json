@@ -1,0 +1,63 @@
+{
+	"a_daive" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "Daive",
+			"biography" : "Daive used to be the loyal advocate for Gelu the elf king. He had been a dwarf leader in Avlee for many years. However, since he learned the madness of Gelu from his friend Ufretin, the leader did not decide to fight for him anymore. He started to back home and fight for his own people.",
+			"specialty" :
+			{
+				"description" : "{Defenders and Mountain Guards}\r\n\r\nIncreases Speed of any Defenders and Mountain Guards by 1 and their Attack and Defense skills by 5% for every level.",
+				"tooltip" : "Creature bonus: Defenders",
+				"name" : "Defenders"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "highlands/heroes/daive/skill32-1.bmp",
+			"specialtyLarge" : "highlands/heroes/daive/skill1.bmp",
+			"large" : "highlands/heroes/daive/HPL000DW.bmp",
+			"small" : "highlands/heroes/daive/HPS000DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 10
+			},
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 10
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "bdefender"
+		}
+	}
+}
+

@@ -1,0 +1,99 @@
+{
+  "bsnowbird": {
+    "name": {
+      "plural": "Snow Falcons",
+      "singular": "Snow Falcon"
+    },
+    "advMapAmount": {
+ "max" : 20,
+ "min" : 10
+    },
+    "faction": "highlands",
+    "aiValue": 532,
+    "attack": 10,
+    "cost": {
+      "gold": 350
+    },
+    "damage": {
+ "max" : 10,
+ "min" : 6
+    },
+    "defense": 8,
+    "fightValue": 512,
+    "graphics": {
+      "animation": "highlands/battle/creatures/CFG4.def",
+      "map": "highlands/map/creatures/AVWC156.def",
+      "iconSmall": "highlands/iconsSmall/creatures/CPrS156B.bmp",
+      "iconLarge": "highlands/iconsBig/creatures/CPrL156B.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide": true,
+    "growth": 4,
+    "hitPoints": 30,
+    "level": 4,
+    "upgrades": [ "bblizzardbird" ],
+    "sound": {
+      "attack": "highlands/FG4ATTK.wav",
+      "defend": "highlands/FG4DFND.wav",
+      "killed": "highlands/FG4KILL.wav",
+      "move": "highlands/FG4MOVE.wav",
+      "wince": "highlands/FG4WNCE.wav"
+    },
+    "speed": 9,
+    "abilities":
+     {
+      "canFly": {
+        "type": "FLYING",
+		"subtype" : "movementFlying"
+      }
+    },
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			}
+		]
+  }
+}

@@ -1,0 +1,131 @@
+{
+	"bberserker":
+	{
+		"name" :
+		{
+			"plural" : "Berserkers",
+			"singular" : "Berserker"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "highlands",
+		"aiValue" : 463,
+		"attack" : 10,
+		"cost" :
+		{
+			"gold" : 240
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 4
+		},
+		"defense" : 6,
+		"fightValue" : 454,
+		"graphics" :
+		{
+			"animation" : "highlands/battle/creatures/CFG3U.def",
+			"map" : "highlands/map/creatures/AVWC155.def",
+			"iconSmall" : "highlands/iconsSmall/creatures/CPrS155B.bmp",
+			"iconLarge" : "highlands/iconsBig/creatures/CPrL155B.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10
+			}
+	       },
+    "growth": 7,
+    "horde": 3,
+		"hitPoints" : 25,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "highlands/FG3UATTK.wav",
+			"defend": "highlands/FG3UDFND.wav",
+			"killed": "highlands/FG3UKILL.wav",
+			"move": "highlands/FG3UMOVE.wav",
+			"wince": "highlands/FG3UWNCE.wav"
+		},
+		"speed" : 8,
+		"abilities" :
+		{
+      "fearless" :
+			{
+				"type" : "FEARLESS"
+			},
+			"barbarity" :
+			{
+				"type" : "SPELL_BEFORE_ATTACK",
+				"subtype" : "spell.barbarity",
+				"val" : 10
+			},
+      "extraAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.frenzy", 
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 2, 2, 3 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+	}
+}
