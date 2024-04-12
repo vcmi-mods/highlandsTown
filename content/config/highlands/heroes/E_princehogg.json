@@ -1,0 +1,65 @@
+{
+	"e_princehogg" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "Prince Hogg",
+			"biography" : "Prince Hogg claims that he will be the true (and only) successor of the throne. Although his brother Rudolf surpasses him a lot in many aspects, he still believes only him can be the real dwarf king in the future. After he created the loyal troops for himself, it is the time to realize his ambition!",
+			"specialty" :
+			{
+				"description" : "{Gold}\r\n\r\nIncreases kingdom's gold production by 350 per day.",
+				"tooltip" : "+350 Gold each day",
+				"name" : "+350 Gold"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "highlands/heroes/princehogg/skill32-5.bmp",
+			"specialtyLarge" : "highlands/heroes/princehogg/skill5.bmp",
+			"large" : "highlands/heroes/princehogg/HPL004DW.bmp",
+			"small" : "highlands/heroes/princehogg/HPS004DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "estates"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}
+	}
+}
+

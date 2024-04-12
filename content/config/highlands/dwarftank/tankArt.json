@@ -1,0 +1,21 @@
+{
+	"dwarftank":
+	{
+		"type" : ["HERO"],
+		"warMachine" : "dwarftank",
+		"class" : "SPECIAL",
+		"slot" : "MACH1",
+		"value": 6000,		
+		"text":
+		{
+			"name": "Armored Cannon",
+			"description": "{Armored Cannon}\r\n\r\nArmored Cannon can attack enemy's troop by using fireball.",
+			"event": "You are lucky to find an armored cannon in the field."
+		},
+		"graphics":
+		{
+			"image": "highlands/iconsSmall/creatures/tankicon.bmp",
+			"map": "highlands/map/creatures/AVWTANK.def"
+		}
+	}
+}

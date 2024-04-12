@@ -1,0 +1,69 @@
+{
+	"o_melisa" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Melisa",
+			"biography" : "Melisa claims that she was the only surviour of a catastrophe. She used to experience a deadly volcanic eruption in Kreegan when she was young. After that, she started to learn fire magic, and hope she can make the devastation once again, by using her own ability. ",
+			"specialty" :
+			{
+				"description" : "{Fire Shield}\r\n\r\nCasts Fire Shield with increased effect, based on hero level compared to the level of the target unit.",
+				"tooltip" : "Spell bonus: Fire Shield",
+				"name" : "Fire Shield"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "highlands/heroes/melisa/skill32-15.bmp",
+			"specialtyLarge" : "highlands/heroes/melisa/skill15.bmp",
+			"large" : "highlands/heroes/melisa/HPL006PY.bmp",
+			"small" : "highlands/heroes/melisa/HPS006PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"fireShield" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "advanced",
+        "skill": "fireMagic"
+      }
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"fireShield" : {
+					"subtype" : "spell.fireShield",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

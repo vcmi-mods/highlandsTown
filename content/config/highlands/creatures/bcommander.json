@@ -1,0 +1,93 @@
+{
+	"bcommander":
+	{
+		"name" :
+		{
+			"plural" : "Runemages",
+			"singular" : "Runemage"
+		},
+		"special" : true,
+		"faction" : "highlands",
+		"aiValue" : 156,
+		"attack" : 5,
+		"damage" :
+		{
+			 "max" : 12,
+			 "min" : 6
+		},
+		"defense" : 5,
+		"fightValue" : 130,
+		"graphics" :
+		{
+			"animation" : "highlands/battle/creatures/bcommander.def",
+			"map" : "highlands/map/creatures/mapbcommander.def",
+			"iconSmall" : "highlands/iconsSmall/creatures/bcommander.bmp",
+			"iconLarge" : "highlands/iconsBig/creatures/bcommander.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "CPRZEAX.DEF",
+				"attackClimaxFrame" : 6,
+				"offset" :
+				{
+					"lowerX" : 62,
+					"lowerY" : -93,
+					"middleX" : 62,
+					"middleY" : -93,
+					"upperX" : 62,
+					"upperY" : -93
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"growth" : 9,
+		"hitPoints" : 40,
+		"level" : 0,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack": "PSNTATTK.wav",
+			"defend": "PSNTDFND.wav",
+			"killed": "PSNTKILL.wav",
+			"move": "PSNTMOVE.wav",
+			"wince": "PSNTWNCE.wav",
+			"shoot": "ZELTSHOT.wav"
+ 		},
+		"speed" : 4,
+		"abilities" :
+		{
+		    "magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.removeObstacle",
+				"val" : 3
+			}
+	    }
+	}
+}

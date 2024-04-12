@@ -1,0 +1,73 @@
+{
+	"k_cynthia" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Cynthia",
+			"biography" : "Cynthia believes that she should be a fairy, instead of a dwarf. Before she backed to her hometown, she had lived in Avlee with sprites for a long time. Everyone who know her suppose that she looks like a true fairy, except without a pair of wings. ",
+			"specialty" :
+			{
+				"description" : "{Ice Bolt}\r\n\r\nCasts Ice Bolt with increased effect, based on hero level compared to the level of the target unit.",
+				"tooltip" : "Spell bonus: Ice Bolt",
+				"name" : "Ice Bolt"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "highlands/heroes/cynthia/skill32-11.bmp",
+			"specialtyLarge" : "highlands/heroes/cynthia/skill11.bmp",
+			"large" : "highlands/heroes/cynthia/HPL002PY.bmp",
+			"small" : "highlands/heroes/cynthia/HPS002PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"iceBolt" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"subtype" : "spell.iceBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

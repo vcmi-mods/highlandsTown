@@ -1,0 +1,139 @@
+{
+	"bjaveliner":
+	{
+		"name" :
+		{
+			"plural" : "Javeliners",
+			"singular" : "Javeliner"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 30,
+			 "min" : 16
+		},
+		"faction" : "highlands",
+		"aiValue" : 211,
+		"attack" : 6,
+		"cost" :
+		{
+			"gold" : 100
+		},
+		"damage" :
+		{
+			 "max" : 4,
+			 "min" : 2
+		},
+		"defense" : 5,
+		"fightValue" : 218,
+    "graphics": {
+      "animation": "highlands/battle/creatures/CFG2.def",
+      "map": "highlands/map/creatures/AVWC152.def",
+      "iconSmall": "highlands/iconsSmall/creatures/CPrS152B.bmp",
+      "iconLarge": "highlands/iconsBig/creatures/CPrL152B.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10
+      },
+      "missile" :
+			{
+				"projectile" : "PPLIZAX.DEF",
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+    },
+		"growth" : 9,
+    "hitPoints": 15,
+   	"level" : 2,
+    "upgrades": ["bharpooner"],
+    "shots": 4,
+		"sound" :
+		{
+			"attack": "highlands/FG2ATTK.wav",
+			"defend": "highlands/FG2DFND.wav",
+                        "killed": "highlands/FG2KILL.wav",
+                        "shoot" : "highlands/FG2SHOT.wav",
+			"move" :  "highlands/FG2MOVE.wav",
+			"wince": "highlands/FG2WNCE.wav"
+		},
+    "speed": 5,
+    "abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+	}
+}

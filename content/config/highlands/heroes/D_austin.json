@@ -1,0 +1,59 @@
+{
+	"d_austin" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "Austin",
+			"biography" : "Austin is interested in the research of ballista. He likes learning the mechnical principles and use it into practice. That makes him skilled in artillery.",
+			"specialty" :
+			{
+				"description" : "{Ballista}\r\n\r\nIncreases the Attack and Defense skills of any Ballista by 5% for every 4 levels (rounded up).",
+				"tooltip" : "Creature bonus: Ballista",
+				"name" : "Ballista"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "highlands/heroes/austin/skill32-4.bmp",
+			"specialtyLarge" : "highlands/heroes/austin/skill4.bmp",
+			"large" : "highlands/heroes/austin/HPL003DW.bmp",
+			"small" : "highlands/heroes/austin/HPS003DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "artillery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "ballista"
+		}
+	}
+}
+

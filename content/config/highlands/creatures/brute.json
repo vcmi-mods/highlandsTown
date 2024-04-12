@@ -1,0 +1,116 @@
+{
+	"bbrute":
+	{
+		"name" :
+		{
+			"plural" : "Brutes",
+			"singular" : "Brute"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "highlands",
+		"aiValue" : 299,
+		"attack" : 9,
+		"cost" :
+		{
+			"gold" : 200
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 4
+		},
+		"defense" : 6,
+		"fightValue" : 299,
+		"graphics" :
+		{
+			"animation" : "highlands/battle/creatures/CFG3.def",
+			"map" : "highlands/map/creatures/AVWC154.def",
+			"iconSmall" : "highlands/iconsSmall/creatures/CPrS154B.bmp",
+			"iconLarge" : "highlands/iconsBig/creatures/CPrL154B.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10
+			},
+	       },
+    "growth": 7,
+    "horde": 3,
+		"hitPoints" : 20,
+		"level" : 3,
+		"upgrades":
+		[
+			"bberserker"
+		],
+		"sound" :
+		{
+			"attack": "highlands/FG3ATTK.wav",
+			"defend" : "highlands/FG3DFND.wav",
+			"killed" : "highlands/FG3KILL.wav",
+			"move" : "highlands/FG3MOVE.wav",
+			"wince" : "highlands/FG3WNCE.wav"
+		},
+		"speed" : 7,
+		"abilities" :
+		{
+    "fearless" :
+			{
+				"type" : "FEARLESS"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+	}
+}

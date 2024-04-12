@@ -1,0 +1,72 @@
+{
+	"m_mildura" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Mildura",
+			"biography" : "As an assistant for Sanya the cleric, Mildura spent her early years in a monastery in Erathia. She found her behavior is totally different from other dwarves when she back home. However, she never give up to humanize the people in her hometown, by using the truth she had learned previously.",
+			"specialty" :
+			{
+				"description" : "{Crystals}\r\n\r\nIncreases kingdom's crystal production by 1 per day.",
+				"tooltip" : "+1 Crystal per day",
+				"name" : "+1 Crystal"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "highlands/heroes/mildura/skill32-13.bmp",
+			"specialtyLarge" : "highlands/heroes/mildura/skill13.bmp",
+			"large" : "highlands/heroes/mildura/HPL004PY.bmp",
+			"small" : "highlands/heroes/mildura/HPS004PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"cure" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+				"level" : "basic",
+				"skill" : "eagleEye"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"crystal" : {
+					"subtype" : "resource.crystal",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}
+	}
+}

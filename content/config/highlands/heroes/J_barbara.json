@@ -1,0 +1,73 @@
+{
+	"j_barbara" :
+	{
+		"class" : "bpyromancer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Barbara",
+			"biography" : "Since her request for dancing was rejected in a party, Barbara started to know the inherent gap between human and dwarves. She desperated to integrate with human but finally she found it is impossible. Thus, she had to anchor her hope on magic, and then became a sorceress. ",
+			"specialty" :
+			{
+				"description" : "{Intelligence}\r\n\r\nReceives a 5% per level bonus to Intelligence skill percentage.",
+				"tooltip" : "Skill bonus: Intelligence",
+				"name" : "Intelligence"
+			}
+		},
+
+    "images": 		{
+			"specialtySmall" : "highlands/heroes/barbara/skill32-10.bmp",
+			"specialtyLarge" : "highlands/heroes/barbara/skill10.bmp",
+			"large" : "highlands/heroes/barbara/HPL001PY.bmp",
+			"small" : "highlands/heroes/barbara/HPS001PY.bmp"
+		},
+
+    "spellbook" :
+		[
+			"protectFire" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bjaveliner",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+
+		"skills" :
+		[
+      {
+        "level": "basic",
+        "skill": "fireMagic"
+      },
+      {
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"intelligence" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_PER_KNOWLEDGE",
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,119 @@
+{
+  "bseinherjar": {
+    "name": {
+      "plural": "Einherjars",
+      "singular": "Einherjar"
+    },
+    "advMapAmount": {
+ "max" : 20,
+ "min" : 10
+    },
+    "faction": "highlands",
+	"special" : true,
+    "aiValue": 532,
+    "attack": 10,
+    "cost": {
+      "gold": 350
+    },
+    "damage": {
+ "max" : 10,
+ "min" : 6
+    },
+    "defense": 8,
+    "fightValue": 512,
+    "graphics": {
+      "animation": "highlands/battle/creatures/HL6_einherjar.def",
+      "map": "highlands/map/creatures/AVWCEXT.def",
+      "iconSmall": "highlands/iconsSmall/creatures/CPrSEXTB.bmp",
+      "iconLarge": "highlands/iconsBig/creatures/CPrLEXTB.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1,
+        "attack": 1,
+        "idle": 10
+      }
+    },
+    "doubleWide": false,
+    "growth": 4,
+    "hitPoints": 35,
+    "level": 4,
+    "sound": {
+      "attack": "ENERATTK.wav",
+		"defend": "ENERDFND.wav",
+		"killed": "ENERKILL.wav",
+		"move": "ENERMOVE.wav",
+		"wince": "ENERWNCE.wav"
+    },
+    "speed": 9,
+    "abilities":
+     {
+      "canFly": {
+        "type": "FLYING"
+      },
+	  "nonLiving" : 
+			{
+				"type" : "NON_LIVING"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"spellsLength" : 
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 5
+			},
+			"randomSpellcaster" :
+			{
+				"type" : "RANDOM_SPELLCASTER",
+				"val" : 2
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 4
+			},
+			"selfLuck" :
+			{
+				"type" : "LUCK",
+				"val" : 1,
+				"valueType" : "INDEPENDENT_MAX"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			}
+		]
+	}
+}

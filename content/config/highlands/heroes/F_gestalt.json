@@ -1,0 +1,63 @@
+{
+	"f_gestalt" :
+	{
+    "class": "bwarlord",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "Gestalt",
+			"biography" : "All individuals suppose Gestalt is the insane for battle. As a mercenary, even the lords in Niggon know the madness of him. He has no opinion of justice, only battle can bring fun for him.",
+			"specialty" :
+			{
+				"description" : "{Brutes and Berserkers}\r\n\r\nIncreases Speed of any Brutes and Berserk by 1 and their Attack and Defense skills by 5% for every 3 levels (rounded up).",
+				"tooltip" : "Creature bonus: Brutes",
+				"name" : "Brutes"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "highlands/heroes/gestalt/skill32-6.bmp",
+			"specialtyLarge" : "highlands/heroes/gestalt/skill6.bmp",
+			"large" : "highlands/heroes/gestalt/HPL005DW.bmp",
+			"small" : "highlands/heroes/gestalt/HPS005DW.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "bdefender",
+				"max" : 20,
+				"min" : 15
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "bbrute",
+				"max" : 4,
+				"min" : 2
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "bbrute"
+		}
+	}
+}
+

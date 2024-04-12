@@ -33,74 +33,74 @@
 		"name" : "Hochland",
 		"description" : "Hochland Stadt",
 		"translations" : [
-			"translation/bastille/german.json"
+			"translation/highlands/german.json"
 		]
 	},	
 	"chinese" : {
 		"name" : "堡垒",
 		"description" : "堡垒取材自北欧神话，是一个矮人的种族，位于矮人故乡的北方大陆沃里。矮人战士擅长防御，法师则擅长火系魔法。和壁垒关系较为密切，但并不是对立或从中独立的种族。",
 		"translations" : [
-			"translation/bastille/chinese.json"
+			"translation/highlands/chinese.json"
 		]
 	},
-    "factions" : [ "config/bastille/town" ],
+    "factions" : [ "config/highlands/town" ],
 	"creatures" :
 	[
-		"config/bastille/creatures/defender.json",
-		"config/bastille/creatures/mountainguard.json",
-		"config/bastille/creatures/javeliner.json",
-		"config/bastille/creatures/harpooner.json",
-		"config/bastille/creatures/brute.json",
-		"config/bastille/creatures/berserker.json",
-		"config/bastille/creatures/snowbird.json",
-		"config/bastille/creatures/blizzardbird.json",
-		"config/bastille/creatures/gladiator.json",
-		"config/bastille/creatures/flameglad.json",
-		"config/bastille/creatures/mammoth.json",
-		"config/bastille/creatures/mammothlord.json",
-		"config/bastille/creatures/bsfafnir.json",
-		"config/bastille/creatures/demonicfafnir.json",
-		"config/bastille/creatures/highAmazon.json",
-		"config/bastille/creatures/highValkyrie.json",		
-		"config/bastille/creatures/bcommander.json",
-		"config/bastille/dwarftank/tank.json"
+		"config/highlands/creatures/defender.json",
+		"config/highlands/creatures/mountainguard.json",
+		"config/highlands/creatures/javeliner.json",
+		"config/highlands/creatures/harpooner.json",
+		"config/highlands/creatures/brute.json",
+		"config/highlands/creatures/berserker.json",
+		"config/highlands/creatures/snowbird.json",
+		"config/highlands/creatures/blizzardbird.json",
+		"config/highlands/creatures/gladiator.json",
+		"config/highlands/creatures/flameglad.json",
+		"config/highlands/creatures/mammoth.json",
+		"config/highlands/creatures/mammothlord.json",
+		"config/highlands/creatures/bsfafnir.json",
+		"config/highlands/creatures/demonicfafnir.json",
+		"config/highlands/creatures/highAmazon.json",
+		"config/highlands/creatures/highValkyrie.json",		
+		"config/highlands/creatures/bcommander.json",
+		"config/highlands/dwarftank/tank.json"
 	],
 	
 	"heroClasses" :
 	[
-		"config/bastille/classes/warlord.json",
-		"config/bastille/classes/pyroma.json"
+		"config/highlands/classes/warlord.json",
+		"config/highlands/classes/pyroma.json"
 	],
 
 	"heroes" :
 	[
-		"config/bastille/heroes/A_daive.json",
-		"config/bastille/heroes/B_richmond.json",
-		"config/bastille/heroes/C_harrigan.json",
-		"config/bastille/heroes/D_austin.json",
-		"config/bastille/heroes/E_princehogg.json",
-		"config/bastille/heroes/F_gestalt.json",
-		"config/bastille/heroes/G_aaron.json",
-		"config/bastille/heroes/H_craighill.json",
-		"config/bastille/heroes/I_aidan.json",
-		"config/bastille/heroes/J_barbara.json",
-		"config/bastille/heroes/K_cynthia.json",
-		"config/bastille/heroes/L_astride.json",
-		"config/bastille/heroes/M_mildura.json",
-		"config/bastille/heroes/N_renee.json",
-		"config/bastille/heroes/O_melisa.json",
-		"config/bastille/heroes/P_leslie.json"
+		"config/highlands/heroes/A_daive.json",
+		"config/highlands/heroes/B_richmond.json",
+		"config/highlands/heroes/C_harrigan.json",
+		"config/highlands/heroes/D_austin.json",
+		"config/highlands/heroes/E_princehogg.json",
+		"config/highlands/heroes/F_gestalt.json",
+		"config/highlands/heroes/G_aaron.json",
+		"config/highlands/heroes/H_craighill.json",
+		"config/highlands/heroes/I_aidan.json",
+		"config/highlands/heroes/J_barbara.json",
+		"config/highlands/heroes/K_cynthia.json",
+		"config/highlands/heroes/L_astride.json",
+		"config/highlands/heroes/M_mildura.json",
+		"config/highlands/heroes/N_renee.json",
+		"config/highlands/heroes/O_melisa.json",
+		"config/highlands/heroes/P_leslie.json"
 	],
-	"artifacts" : [ "config/bastille/dwarftank/tankArt.json" ],
+	"artifacts" : [ "config/highlands/dwarftank/tankArt.json" ],
 	"spells" :
 	[
-		"config/bastille/NewOldSpells/nImmolation.json",
-		"config/bastille/NewOldSpells/Barbarity.json",
-		"config/bastille/NewOldSpells/fireVulnerability.json",
-		"config/bastille/NewOldSpells/moat.json"
+		"config/highlands/NewOldSpells/nImmolation.json",
+		"config/highlands/NewOldSpells/Barbarity.json",
+		"config/highlands/NewOldSpells/fireVulnerability.json",
+		"config/highlands/NewOldSpells/moat.json"
 	],
 	 "objects":
     [
-		"config/bastille/dwellings.json"
+		"config/highlands/dwellings.json"
     ]
 }
