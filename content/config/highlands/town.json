@@ -921,7 +921,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGmark",
           "x": 0,
           "y": 0,
-          "z": 2
+          "z": 3
         },
         "resourceSilo": {
           "animation": "highlands/town-screen/buildings/TBFGsilo",
@@ -929,7 +929,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGsilo",
           "x": 0,
           "y": 0,
-		  "z": 3
+		  "z": 2
         },
         "blacksmith": {
           "animation": "highlands/town-screen/buildings/TBFGBLAK",
