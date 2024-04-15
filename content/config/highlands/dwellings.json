@@ -1,50 +1,50 @@
 {
     "core:creatureGeneratorCommon" : {
         "types" : {
-            "bastilleLevel1" : {
+            "highlandsLevel1" : {
                 "name" : "Dwarven Mines",
                 "creatures" : [[ "bdefender" ]],
 
                 "templates" : {
                     "default" : {
-                        "animation" : "highlands/map/dwellings/Baston1",
+                        "animation" : "highlands/map/dwellings/Highlands1",
                         "mask" : ["VVVV", "VVVV", "VVBB", "VVAB" ]
                     }
                 }
             },
-            "bastilleLevel2" : {
+            "highlandsLevel2" : {
                 "name" : "Hunter Camp",
                 "creatures" : [[ "bjaveliner" ]],
 
                 "templates" : {
                     "default" : {
-                        "animation" : "highlands/map/dwellings/Baston2",
+                        "animation" : "highlands/map/dwellings/Highlands2",
                         "mask" : [ "VVBB","VBAB" ]
                     }
                 }
             },
-            "bastilleLevel3" : {
+            "highlandsLevel3" : {
                 "name" : "Longhouse",
                 "creatures" : [[ "bbrute" ]],
 
                 "templates" : {
                     "default" : {   
-                        "animation" : "highlands/map/dwellings/Baston3",
+                        "animation" : "highlands/map/dwellings/Highlands3",
                         "mask" : ["VVV","VBB","VBA" ]
                     }
                 }
             },
-            "bastilleLevel4" : {
+            "highlandsLevel4" : {
                 "name" : "Iceberg Nest",
                 "creatures" : [[ "bsnowbird" ]],
                 "templates" : {
                     "default" : {
-                        "animation" : "highlands/map/dwellings/Baston4",
+                        "animation" : "highlands/map/dwellings/Highlands4",
                         "mask" : ["VVV","VBB","VAB" ]
                     }
                 }
             },
-            "bastilleLevel5" : {
+            "highlandsLevel5" : {
                 "name" : "Battle Fortress",
                 "creatures" : [[ "bgladiator" ]],
                 "guards" : [
@@ -52,12 +52,12 @@
                 ],
                 "templates" : {
                     "default" : {
-                        "animation" : "highlands/map/dwellings/Baston5",
+                        "animation" : "highlands/map/dwellings/Highlands5",
                         "mask" : [ "VVV","VBB","VBA" ]
                     }
                 }
             },
-            "bastilleLevel6" : {
+            "highlandsLevel6" : {
                 "name" : "Hall of Clan",
                 "creatures" : [[ "bmammoth" ]],
                 "guards" : [
@@ -65,12 +65,12 @@
                 ],
                 "templates" : {
                     "default" : {
-                        "animation" : "highlands/map/dwellings/Baston6",
+                        "animation" : "highlands/map/dwellings/Highlands6",
                         "mask" : ["VVV","VBB","VAB" ]
                     }
                 }
             },
-            "bastilleLevel7" : {
+            "highlandsLevel7" : {
                 "name" : "Volcanic Vent",
                 "creatures" : [[ "bsfafnir" ]],
                 "guards" : [
@@ -78,12 +78,12 @@
                 ],
                 "templates" : {
                     "default" : {
-                        "animation" : "highlands/map/dwellings/Baston7",
+                        "animation" : "highlands/map/dwellings/Highlands7",
                         "mask" : ["VVV", "VVV", "VBB","VAB" ]
                     }
                 }
             },
-			"bastilleLevel8" : {
+			"highlandsLevel8" : {
                 "name" : "Hall of Valhalla",
                 "creatures" : [[ "amazonHigh" ]],
                 "guards" : [
@@ -91,7 +91,7 @@
                 ],
                 "templates" : {
                     "default" : {
-                        "animation" : "highlands/map/dwellings/Baston8",
+                        "animation" : "highlands/map/dwellings/Highlands8",
                         "mask" : ["VVV","VBB","VAB" ]
                     }
                 }
