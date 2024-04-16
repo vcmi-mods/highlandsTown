@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.02",
+	"version" : "2.03",
 	"modType" : "Town",	
 	"conflicts" :
     [
@@ -16,18 +16,19 @@
 	},
 	"changelog" :
     {
-		"2.02"	:	["Fixed the creatures' stackExp, the commander and other bugs"],
-		"2.01"	:	["Update to vcmi-1.4 version"],
-		"2.00"	:	["Update to 2.00 version"],
-		"1.10"   : ["Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"],
-		"1.09"   : ["Update to vcmi-1.3"],
-		"1.08"   : ["New DAEMON_SUMMONING format", "Arrow towers icons"],
-		"1.07"   : ["Partial grail building support"],
-		"1.06"   : ["Partial special buildings support"],
-		"1.05"   : ["new interface and new abilities, new lvl 6 creatures!"],
-		"1.02"   : [ "Added new commander", "Cosmetic fixes" ],
-		"1.01"   : [ "Bug fixes" ],
-		"1.00"   : [ "Initial release" ]
+		"2.03"	: ["New town theme by Fabrice-TIERCELIN and AI Udio"],
+		"2.02"	: ["Fixed the creatures' stackExp, the commander and other bugs"],
+		"2.01"	: ["Update to vcmi-1.4 version"],
+		"2.00"	: ["Update to 2.00 version"],
+		"1.10"  : ["Chinese translation from https://www.h3wog.com/thread-77661-1-1.html"],
+		"1.09"  : ["Update to vcmi-1.3"],
+		"1.08"  : ["New DAEMON_SUMMONING format", "Arrow towers icons"],
+		"1.07"  : ["Partial grail building support"],
+		"1.06"  : ["Partial special buildings support"],
+		"1.05"  : ["new interface and new abilities, new lvl 6 creatures!"],
+		"1.02"  : ["Added new commander", "Cosmetic fixes"],
+		"1.01"  : ["Bug fixes"],
+		"1.00"  : ["Initial release"]
     },	
     	"german" : {
 		"name" : "Hochland",
