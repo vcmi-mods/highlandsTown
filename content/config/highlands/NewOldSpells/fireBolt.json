@@ -22,7 +22,7 @@
  
 		//forgetfulness animation
 		"animation":{
-			"affect":["bastiSpells/ExplO.def"]
+			"affect":["highlandSpells/ExplO.def"]
 		},
  
 		"flags" : {
@@ -33,15 +33,15 @@
  
 		"graphics":
 		{
-			"iconBook": "bastiSpells/USELESS.bmp",
-			"iconScroll": "bastiSpells/USELESS2.bmp",
-			"iconScenarioBonus": "bastiSpells/USELESS3.bmp",
-			"iconEffect": "bastiSpells/USELESS4.bmp"
+			"iconBook": "highlandSpells/USELESS.bmp",
+			"iconScroll": "highlandSpells/USELESS2.bmp",
+			"iconScenarioBonus": "highlandSpells/USELESS3.bmp",
+			"iconEffect": "highlandSpells/USELESS4.bmp"
 		},
 
 		"sounds":
 		{
-			"cast":"bastiSpells/EXPLO.wav"
+			"cast":"highlandSpells/EXPLO.wav"
 		},
 		"targetType" : "CREATURE",
  

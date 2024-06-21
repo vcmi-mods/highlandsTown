@@ -22,22 +22,22 @@
  
 		//forgetfulness animation
 		"animation":{
-			"affect":["bastiSpells/ICEF.def"]
+			"affect":["highlandSpells/ICEF.def"]
 		},
  
 		"flags" : {"negative": true, "indifferent": true},
  
 		"graphics":
 		{
-			"iconBook": "bastiSpells/USELESS.bmp",
-			"iconScroll": "bastiSpells/USELESS2.bmp",
-			"iconScenarioBonus": "bastiSpells/USELESS3.bmp",
-			"iconEffect": "bastiSpells/INFroz.bmp"
+			"iconBook": "highlandSpells/USELESS.bmp",
+			"iconScroll": "highlandSpells/USELESS2.bmp",
+			"iconScenarioBonus": "highlandSpells/USELESS3.bmp",
+			"iconEffect": "highlandSpells/INFroz.bmp"
 		},
 
 		"sounds":
 		{
-			"cast":"bastiSpells/EXPLO.wav"
+			"cast":"highlandSpells/EXPLO.wav"
 		},
 		"targetType" : "CREATURE",
  

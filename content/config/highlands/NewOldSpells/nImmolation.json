@@ -21,13 +21,13 @@
 
  
 		"animation":{
-			"affect":[{ "defName":"bastiSpells/nlA.def", "verticalPosition":"bottom"}]
+			"affect":[{ "defName":"highlandSpells/nlA.def", "verticalPosition":"bottom"}]
 		},
  
 		"flags" : { "offensive": true, "damage": true, "negative" : true },
 		"graphics":
 		{
-			"iconEffect": "bastiSpells/nlAE"
+			"iconEffect": "highlandSpells/nlAE"
 		},
 
 		"sounds": {
@@ -178,14 +178,14 @@
 
  
 		"animation":{
-			"affect":[{ "defName":"bastiSpells/nlA.def", "verticalPosition":"bottom"}]
+			"affect":[{ "defName":"highlandSpells/nlA.def", "verticalPosition":"bottom"}]
 		},
  
 		"flags" : { "offensive": true, "damage": true, "negative" : true, "special" : true },
 
 		"graphics":
 		{
-			"iconEffect": "bastiSpells/nlAE"
+			"iconEffect": "highlandSpells/nlAE"
 		},
 
 		"sounds": {
