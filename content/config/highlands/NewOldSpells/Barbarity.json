@@ -28,10 +28,10 @@
 
 		"graphics":
 		{
-			"iconBook": "bastiSpells/USELESS.bmp",
-			"iconScroll": "bastiSpells/USELESS2.bmp",
-			"iconScenarioBonus": "bastiSpells/USELESS3.bmp",
-			"iconEffect": "bastiSpells/INBAR.bmp"
+			"iconBook": "highlandSpells/USELESS.bmp",
+			"iconScroll": "highlandSpells/USELESS2.bmp",
+			"iconScenarioBonus": "highlandSpells/USELESS3.bmp",
+			"iconEffect": "highlandSpells/INBAR.bmp"
 		},
 
 		"sounds":
