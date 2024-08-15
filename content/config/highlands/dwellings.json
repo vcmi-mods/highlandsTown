@@ -30,7 +30,7 @@
                 "templates" : {
                     "default" : {   
                         "animation" : "highlands/map/dwellings/Highlands3",
-                        "mask" : ["VVV","VBB","VBA" ]
+                        "mask" : ["VVVV","VBBV","VVAA" ]
                     }
                 }
             },
