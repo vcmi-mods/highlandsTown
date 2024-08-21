@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.04",
+	"version" : "2.05",
 	"modType" : "Town",	
 	"conflicts" :
     [
@@ -16,6 +16,7 @@
 	},
 	"changelog" :
     {
+		"2.05"	: ["Russian translation by Anton Sergeew"],
 		"2.04"	: ["Fix shadow issues on the long house by Fabrice-TIERCELIN"],
 		"2.03"	: ["New town theme by Fabrice-TIERCELIN and AI Udio"],
 		"2.02"	: ["Fixed the creatures' stackExp, the commander and other bugs"],
@@ -43,6 +44,13 @@
 		"description" : "堡垒取材自北欧神话，是一个矮人的种族，位于矮人故乡的北方大陆沃里。矮人战士擅长防御，法师则擅长火系魔法。和壁垒关系较为密切，但并不是对立或从中独立的种族。",
 		"translations" : [
 			"translation/highlands/chinese.json"
+		]
+	},
+	"russian" : {
+		"name" : "Высокогорье",
+		"description" : "Бастилия",
+		"translations" : [
+			"translation/highlands/russian.json"
 		]
 	},
     "factions" : [ "config/highlands/town" ],
