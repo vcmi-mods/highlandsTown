@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.03",
+	"version" : "2.04",
 	"modType" : "Town",	
 	"conflicts" :
     [
@@ -16,6 +16,7 @@
 	},
 	"changelog" :
     {
+		"2.04"	: ["Fix shadow issues on the long house by Fabrice-TIERCELIN"],
 		"2.03"	: ["New town theme by Fabrice-TIERCELIN and AI Udio"],
 		"2.02"	: ["Fixed the creatures' stackExp, the commander and other bugs"],
 		"2.01"	: ["Update to vcmi-1.4 version"],
