@@ -48,7 +48,7 @@
 	},
 	"russian" : {
 		"name" : "Высокогорье",
-		"description" : "Бастилия",
+		"description" : "Новый город гномов в скадинавском стиле - Высокогорье, находящийся в заснеженных горах.",
 		"translations" : [
 			"translation/highlands/russian.json"
 		]
