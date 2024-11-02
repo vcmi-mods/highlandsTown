@@ -225,6 +225,7 @@
             "wood": 5,
             "gold": 500
           },
+		  "marketModes" : ["resource-resource", "resource-player"],
           "id": 14
         },
         "resourceSilo": {
@@ -235,11 +236,13 @@
             "gold": 5000
           },
           "requires": [ "marketplace" ],
+		  "produce": { "mercury": 1},
           "id": 15
         },
         "blacksmith": {
           "description": "The Blacksmith provides your armies with Armored Cannon.",
           "name": "Blacksmith",
+		   "warMachine": "dwarftank",
           "cost": {
             "wood": 5,
             "gold": 1000
@@ -288,7 +291,15 @@
         "special2": {
           "description": "The Observation Deck can increase the scouting radius by 2 for each visiting hero once a week.",
           "name": "Observation Deck",
-		  "onVisitBonuses": [ { "duration": "ONE_WEEK", "type": "SIGHT_RADIUS", "val": 2 } ],
+			"configuration" : {
+				"visitMode" : "bonus",
+				"rewards" : [
+					{
+						"message" : "You take in the expansive view. This vantage point allows your heroes to extend their scouting skills for the week, revealing hidden paths and threats ahead.",
+						"bonuses" : [ { "type" : "SIGHT_RADIUS", "val" : 2, "valueType" : "ADDITIVE_VALUE", "duration" : "ONE_WEEK"} ]
+					}
+				]
+			},
           "cost": {
             "crystal": 5,
             "gold": 1005
@@ -301,13 +312,21 @@
 			"id": 21
         },
         "special3": {
-          "description": "The War Memorial can give +1 defence for visiting heroes.",
+          "description": "The War Memorial can give +1 defense for visiting heroes.",
           "name": "War Memorial",
 		  "requires": [ "fort" ],
           "cost": {
             "gold": 1000
           },
-          "type": "defenceVisitingBonus",
+			"configuration" : {
+				"visitMode" : "bonus",
+				"rewards" : [
+					{
+						"message" : "Spending time in the War Memorial, the experienced warriors therein teach you additional defensive skills (+1 Defense)",
+						"bonuses" : [ { "type" : "PRIMARY_SKILL", "val" : 2, "subtype": "primarySkill.defence" } ]
+					}
+				]
+			},
           "id": 22
         },
         "horde2": {
@@ -687,7 +706,7 @@
       },
       "mageGuild": 5,
 
-      "musicTheme": "music/factions/Arctic_Quest",
+      "musicTheme": [ "music/factions/Arctic_Quest" ],
       "names": [
         "Hammondale",
         "Hoskins",
@@ -1138,7 +1157,6 @@
       },
       "tavernVideo": "TAVERN.BIK",
       "townBackground": "highlands/town-screen/TPFGBACK.bmp",
-      "warMachine": "dwarftank",
       "hallSlots": [
         [
           [ "villageHall", "townHall", "cityHall", "capitol" ],

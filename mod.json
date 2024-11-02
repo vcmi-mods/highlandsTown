@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.06",
+	"version" : "2.07",
 	"modType" : "Town",	
 	"conflicts" :
     [
@@ -12,10 +12,11 @@
     ],
 	"compatibility" :
 	{
-		"min" : "1.4.0"
+		"min" : "1.6.0"
 	},
 	"changelog" :
     {
+		"2.07"	: ["Update to vcmi-1.6 format"],
 		"2.06"	: ["Updated russian translation"],
 		"2.05"	: ["Russian translation by Anton Sergeew"],
 		"2.04"	: ["Fix shadow issues on the long house by Fabrice-TIERCELIN"],
