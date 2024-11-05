@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.07",
+	"version" : "2.08",
 	"modType" : "Town",	
 	"conflicts" :
     [
@@ -16,6 +16,7 @@
 	},
 	"changelog" :
     {
+		"2.08"	: ["Polish translation by FallainBlack"],
 		"2.07"	: ["Update to vcmi-1.6 format"],
 		"2.06"	: ["Updated russian translation"],
 		"2.05"	: ["Russian translation by Anton Sergeew"],
@@ -53,6 +54,13 @@
 		"description" : "Новый город гномов в скадинавском стиле - Высокогорье, находящийся в заснеженных горах.",
 		"translations" : [
 			"translation/highlands/russian.json"
+		]
+	},
+	"polish" : {
+		"name" : "Wyżyny",
+		"description" : "Nowe miasto krasnoludów w stylu skadynawskim, Wyżyny, położone w ośnieżonych górach.",
+		"translations" : [
+			"translation/highlands/polish.json"
 		]
 	},
     "factions" : [ "config/highlands/town" ],
