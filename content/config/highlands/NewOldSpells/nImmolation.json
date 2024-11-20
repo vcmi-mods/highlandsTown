@@ -24,7 +24,7 @@
 			"affect":[{ "defName":"highlandSpells/nlA.def", "verticalPosition":"bottom"}]
 		},
  
-		"flags" : { "offensive": true, "damage": true, "negative" : true },
+		"flags" : { "damage": true, "negative" : true },
 		"graphics":
 		{
 			"iconEffect": "highlandSpells/nlAE"
@@ -181,7 +181,7 @@
 			"affect":[{ "defName":"highlandSpells/nlA.def", "verticalPosition":"bottom"}]
 		},
  
-		"flags" : { "offensive": true, "damage": true, "negative" : true, "special" : true },
+		"flags" : { "damage": true, "negative" : true, "special" : true },
 
 		"graphics":
 		{
