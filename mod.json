@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.08",
+	"version" : "2.09",
 	"modType" : "Town",	
 	"conflicts" :
     [
@@ -16,6 +16,7 @@
 	},
 	"changelog" :
     {
+                "2.09"	: ["Updated polish translation"],
 		"2.08"	: ["Polish translation by FallainBlack"],
 		"2.07"	: ["Update to vcmi-1.6 format"],
 		"2.06"	: ["Updated russian translation"],
@@ -57,8 +58,8 @@
 		]
 	},
 	"polish" : {
-		"name" : "Wyżyny",
-		"description" : "Nowe miasto krasnoludów w stylu skadynawskim, Wyżyny, położone w ośnieżonych górach.",
+		"name" : "Warownia",
+		"description" : "Nowe miasto krasnoludów w stylu skadynawskim, Warownia, położone w ośnieżonych górach.",
 		"translations" : [
 			"translation/highlands/polish.json"
 		]
