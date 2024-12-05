@@ -35,7 +35,14 @@
 		"1.02"  : ["Added new commander", "Cosmetic fixes"],
 		"1.01"  : ["Bug fixes"],
 		"1.00"  : ["Initial release"]
-    },
+    },	
+    	"german" : {
+		"name" : "Hochland",
+		"description" : "Hochland Stadt",
+		"translations" : [
+			"translation/highlands/german.json"
+		]
+	},	
 	"chinese" : {
 		"name" : "堡垒",
 		"description" : "堡垒取材自北欧神话，是一个矮人的种族，位于矮人故乡的北方大陆沃里。矮人战士擅长防御，法师则擅长火系魔法。和壁垒关系较为密切，但并不是对立或从中独立的种族。",
@@ -43,18 +50,11 @@
 			"translation/highlands/chinese.json"
 		]
 	},
-	"french" : {
-		"name" : "Plateau",
-		"description" : "La ville des hauts plateaux",
+	"russian" : {
+		"name" : "Высокогорье",
+		"description" : "Новый город гномов в скадинавском стиле - Высокогорье, находящийся в заснеженных горах.",
 		"translations" : [
-			"translation/highlands/french.json"
-		]
-	},
-	"german" : {
-		"name" : "Hochland",
-		"description" : "Hochland Stadt",
-		"translations" : [
-			"translation/highlands/german.json"
+			"translation/highlands/russian.json"
 		]
 	},
 	"polish" : {
@@ -62,13 +62,6 @@
 		"description" : "Nowe miasto krasnoludów w stylu skadynawskim, Warownia, położone w ośnieżonych górach.",
 		"translations" : [
 			"translation/highlands/polish.json"
-		]
-	},
-	"russian" : {
-		"name" : "Высокогорье",
-		"description" : "Новый город гномов в скадинавском стиле - Высокогорье, находящийся в заснеженных горах.",
-		"translations" : [
-			"translation/highlands/russian.json"
 		]
 	},
     "factions" : [ "config/highlands/town" ],
