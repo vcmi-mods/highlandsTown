@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.09",
+	"version" : "2.10",
 	"modType" : "Town",	
 	"conflicts" :
     [
@@ -16,6 +16,7 @@
 	},
 	"changelog" :
     {
+		"2.10"	: ["Fixed Polish translation integrity with original game version by Yoshiro."]
                 "2.09"	: ["Updated polish translation"],
 		"2.08"	: ["Polish translation by FallainBlack"],
 		"2.07"	: ["Update to vcmi-1.6 format"],
