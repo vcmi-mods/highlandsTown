@@ -1,26 +1,25 @@
 {
   "bsfafnir": {
     "name": {
-      "plural": "Fafnirs",
-      "singular": "Fafnir"
+      "plural": "Fire Dragons",
+      "singular": "Fire Dragon"
     },
     "advMapAmount": {
  "max" : 10,
- "min" : 4
+ "min" : 5
     },
     "faction": "highlands",
-    "aiValue": 6216,
-    "attack": 21,
+    "aiValue": 3716,
+    "attack": 16,
     "cost": {
-      "gold": 2400,
-      "mercury": 1
+      "gold": 2000
     },
     "damage": {
  "max" : 40,
- "min" : 30
+ "min" : 25
     },
-    "defense": 21,
-    "fightValue": 4952,
+    "defense": 18,
+    "fightValue": 3552,
     "graphics": {
       "animation": "highlands/battle/creatures/CFG7.def",
       "map": "highlands/map/creatures/AVWC162.def",
@@ -35,7 +34,7 @@
     },
     "doubleWide": true,
     "growth": 1,
-    "hitPoints": 200,
+    "hitPoints": 175,
     "level": 7,
     "upgrades": [
       "demonicfafnir"
@@ -43,30 +42,81 @@
     "sound": {
       "attack": "highlands/FG7ATTK.wav",
       "defend": "highlands/FG7DFND.wav",
-      "killed": "highlands/FG7KILL.wav",
-      "move": "highlands/FG7MOVE.wav",
+      "killed": "MAGMKILL.wav",
+      "move": "MAGMMOVE.wav",
       "wince": "highlands/FG7WNCE.wav"
     },
-    "speed": 9,
+    "speed": 5,
     "abilities": 
     {
-      "canFly": 
-      {
-        "type": "FLYING"
-      },
-      "dragon" : 
+      "nonLiving" : 
 			{
-				"type" : "DRAGON_NATURE"
+				"type" : "NON_LIVING"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
 			},
 			"basicSlayer" : { "type" : "KING", "val": 0 },
-      	"fireBreath" :
+			"fireBreath" :
 			{
 				"type" : "TWO_HEX_ATTACK_BREATH"
 			},
-			"spellImmunity" :
+			"disintegrate":
 			{
-				"type" : "LEVEL_SPELL_IMMUNITY",
-				"val" : 3
+				"type": "DISINTEGRATE",
+			},
+			"immuneToFire" :
+			{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+			},
+			"castLiquidFlame" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.liquidFlame",
+				"val" : 50
+			},
+			"castLiquidFlameStrength" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"waterWeaken" :
+			{
+                 "type" : "SPELL_DAMAGE_REDUCTION",
+                 "val" : -100,
+                 "subtype" : "spellSchool.water",
+            },
+			"attackInLava" : 
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["lava"]
+				} ]
+				
+			},
+			"defenceInLava"  : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["lava"]
+				} ]
+				
+			},
+			"speedInLava" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["lava"]
+				} ]
+				
 			}
 		},
 		"stackExperience" :
@@ -75,16 +125,18 @@
 			{
 				"bonus" :
 				{
-					"subtype" : "attack",
+					"subtype" : "primarySkill.attack",
 					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},	
 			{
 				"bonus" :
 				{
-					"subtype" : "defence",
+					"subtype" : "primarySkill.defence",
 					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},
@@ -102,14 +154,6 @@
 					"type" : "STACKS_SPEED"
 				},
 				"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 2, 3]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			},
 			{
 				"bonus" :

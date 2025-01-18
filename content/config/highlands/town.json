@@ -229,15 +229,15 @@
           "id": 14
         },
         "resourceSilo": {
-          "description": "The Resource Silo provides you with an additional +1 mercury each day.",
+          "description": "The Resource Silo provides you with an additional +1 wood and ore each day.",
           "name": "Resource Silo",
           "cost": {
             "ore": 5,
             "gold": 5000
           },
           "requires": [ "marketplace" ],
-		  "produce": { "mercury": 1},
-          "id": 15
+			"produce": { "wood": 1, "ore": 1 },
+			"id" : 15
         },
         "blacksmith": {
           "description": "The Blacksmith provides your armies with Armored Cannon.",
@@ -442,18 +442,17 @@
           "id": 35
         },
         "dwellingLvl7": {
-          "description": "The Volcanic Vent allows you to recruit Fafnirs.",
+          "description": "The Volcanic Vent allows you to recruit Fire Dragons.",
           "name": "Volcanic Vent",
           "cost": {
-            "gold": 15000,
-            "wood": 5,
-            "ore": 15,
-            "mercury": 15
+            "gold": 8000,
+            "wood": 15,
+            "ore": 15
           },
-          "requires": ["allOf",[ "mageGuild2" ],[ "dwellingLvl5" ],[ "noneOf", [ "dwellingLvl7B" ] ]],
+          "requires": ["allOf",[ "mageGuild1" ],[ "dwellingLvl5" ]],
           "id": 36
         },
-		"dwellingLvl7B" :
+		"dwellingLvl8" :
 		{
 			"name" : "Hall of Valhalla",
 			"description" : "Hall of Valhalla allows you to recruit Amazons.",
@@ -462,8 +461,8 @@
 						"ore" : 10,
 						"gold" : 15000
 					},
-			"id" : 50, 
-			"requires" : [ "allOf", [ "dwellingLvl6" ], [ "blacksmith" ], [ "noneOf", [ "dwellingLvl7" ] ] ]
+			"id" : 150, 
+			"requires" : [ "allOf", [ "dwellingLvl6" ], [ "blacksmith" ] ]
 		},
         "dwellingUpLvl1": {
           "description": "The Dwarven Mines allow you to recruit Mountain Guards.",
@@ -536,19 +535,19 @@
           "upgrades": "dwellingLvl6"
         },
         "dwellingUpLvl7": {
-          "description": "The Volcanic Vent allows you to recruit Nidhoggs.",
+          "description": "The Volcanic Vent allows you to recruit Magma Dragons.",
           "name": "Upg. Volcanic Vent",
           "cost": {
-            "gold": 15000,
-            "wood": 5,
-            "ore": 5,
-            "mercury": 20
+			"gold": 15000,
+            "wood": 20,
+            "ore": 20,
+            "mercury": 5,
+			"sulfur": 5
           },
           "id": 43,
-          "requires": [ "mageGuild3" ],
           "upgrades": "dwellingLvl7"
         },
-		"dwellingUpLvl7B" :
+		"dwellingUpLvl8" :
 				{
 					"name" : "Upg. Hall of Valhalla",
 					"description" : "Hall of Valhalla allows you to recruit Valkyries.",
@@ -559,7 +558,7 @@
 						"gold" : 15000
 					},
 					"id" : 57, 
-					"upgrades" : "dwellingLvl7B"
+					"upgrades" : "dwellingLvl8"
 				}
       },
       "buildingsIcons": "highlands/town-hall.def",
@@ -570,7 +569,8 @@
         [ "bsnowbird", "bblizzardbird" ],
         [ "bgladiator", "bflameglad" ],
         [ "bmammoth", "bmammothlord" ],
-        [ "bsfafnir", "demonicfafnir","amazonHigh", "valkyrieHigh" ]
+        [ "bsfafnir", "demonicfafnir"],
+		["amazonHigh", "valkyrieHigh" ]
       ],
       "guildBackground": "TPMAGE.bmp",
       "guildSpells": {
@@ -725,7 +725,6 @@
         "Manerford",
         "Esperance"
       ],
-      "primaryResource": "mercury",
       "siege": {
         "shooter": "bjaveliner",
         "imagePrefix": "highlands/siege/SGFG",
@@ -836,7 +835,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGmage",
           "x": 0,
           "y": 0,
-          "z": 0
+          "z": -1
         },
         "mageGuild2": {
           "animation": "highlands/town-screen/buildings/TBFGmag2",
@@ -844,7 +843,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGmag2",
           "x": 0,
           "y": 0,
-          "z": 0
+          "z": -1
         },
         "mageGuild3": {
           "animation": "highlands/town-screen/buildings/TBFGmag3",
@@ -852,7 +851,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGmag3",
           "x": 0,
           "y": 0,
-          "z": 0
+          "z": -1
         },
         "mageGuild4": {
           "animation": "highlands/town-screen/buildings/TBFGmag4",
@@ -860,7 +859,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGmag4",
           "x": 0,
           "y": 0,
-          "z": 0
+          "z": -1
         },
         "mageGuild5": {
           "animation": "highlands/town-screen/buildings/TBFGmag5",
@@ -868,39 +867,35 @@
           "border": "highlands/town-screen/buildings-border/TOFGmag5",
           "x": 0,
           "y": 0,
-          "z": 0
+          "z": -1
         },
         "tavern": {
           "animation": "highlands/town-screen/buildings/TBFGTVRN",
           "area": "highlands/town-screen/buildings-area/TZFGTVRN",
           "border": "highlands/town-screen/buildings-border/TOFGTVRN",
           "x": 0,
-          "y": 0,
-          "z": 1
+          "y": 0
         },
         "fort": {
           "animation": "highlands/town-screen/buildings/TBFGCSTL",
           "area": "highlands/town-screen/buildings-area/TZFGCSTL",
           "border": "highlands/town-screen/buildings-border/TOFGCSTL",
           "x": 0,
-          "y": 0,
-          "z": 1
+          "y": 0
         },
         "citadel": {
           "animation": "highlands/town-screen/buildings/TBFGCAS2",
           "area": "highlands/town-screen/buildings-area/TZFGCAS2",
           "border": "highlands/town-screen/buildings-border/TOFGCAS2",
           "x": 0,
-          "y": 0,
-          "z": 1
+          "y": 0
         },
         "castle": {
           "animation": "highlands/town-screen/buildings/TBFGCAS3",
           "area": "highlands/town-screen/buildings-area/TZFGCAS3",
           "border": "highlands/town-screen/buildings-border/TOFGCAS3",
           "x": 0,
-          "y": 0,
-          "z": 1
+          "y": 0
         },
         "villageHall": {
           "animation": "highlands/town-screen/buildings/TBFGhall",
@@ -908,7 +903,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGhall",
           "x": 0,
           "y": 0,
-          "z": 2
+		  "z": 1
         },
         "townHall": {
           "animation": "highlands/town-screen/buildings/TBFGhal2",
@@ -916,7 +911,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGhal2",
           "x": 0,
           "y": 0,
-          "z": 2
+		  "z": 1
         },
         "cityHall": {
           "animation": "highlands/town-screen/buildings/TBFGhal3",
@@ -924,7 +919,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGhal3",
           "x": 0,
           "y": 0,
-          "z": 2
+		  "z": 1
         },
         "capitol": {
           "animation": "highlands/town-screen/buildings/TBFGhal4",
@@ -932,7 +927,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGhal4",
           "x": 0,
           "y": 0,
-          "z": 2
+		  "z": 1
         },
         "marketplace": {
           "animation": "highlands/town-screen/buildings/TBFGmark",
@@ -940,7 +935,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGmark",
           "x": 0,
           "y": 0,
-          "z": 3
+		  "z": 1
         },
         "resourceSilo": {
           "animation": "highlands/town-screen/buildings/TBFGsilo",
@@ -954,9 +949,8 @@
           "animation": "highlands/town-screen/buildings/TBFGBLAK",
           "area": "highlands/town-screen/buildings-area/TZFGBLAK",
           "border": "highlands/town-screen/buildings-border/TOFGBLAK",
-          "x": 208,
-          "y": 183,
-          "z": 1
+          "x": 0,
+          "y": 0
         },
         "horde1": {
           "animation": "highlands/town-screen/buildings/TBFGHRD0",
@@ -964,7 +958,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGHRD0",
           "x": 0,
           "y": 0,
-          "z": 3,
+          "z": 2,
           "hidden": true
         },
         "horde1Upgr": {
@@ -973,7 +967,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGHRD1",
           "x": 0,
           "y": 0,
-          "z": 3,
+          "z": 2,
           "hidden": true
         },
         "special1": {
@@ -982,7 +976,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGSPEC",
           "x": 0,
           "y": 0,
-          "z": 0
+          "z": -1
         },
         "special2": {
           "animation": "highlands/town-screen/buildings/TBFGSpe2",
@@ -990,7 +984,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGSpe2",
           "x": 0,
           "y": 0,
-          "z": 3
+          "z": 2
         },
         "special3": {
           "animation": "highlands/town-screen/buildings/TBFGSpe3",
@@ -998,7 +992,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGSpe3",
           "x": 0,
           "y": 0,
-          "z": 4
+          "z": 3
         },
         "horde2": {
           "animation": "highlands/town-screen/buildings/TBFGHRD2",
@@ -1006,7 +1000,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGHRD2",
           "x": 0,
           "y": 0,
-          "z": 4,
+          "z": 3,
           "hidden": true
         },
         "horde2Upgr": {
@@ -1015,7 +1009,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGHRD3",
           "x": 0,
           "y": 0,
-          "z": 4,
+          "z": 3,
           "hidden": true
         },
         "grail": {
@@ -1023,24 +1017,21 @@
           "area": "highlands/town-screen/buildings-area/TZFGHoly",
           "border": "highlands/town-screen/buildings-border/TOFGHoly",
           "x": 0,
-          "y": 0,
-          "z": 1
+          "y": 0
         },
         "dwellingLvl1": {
           "animation": "highlands/town-screen/buildings/TBFGdw_0",
           "area": "highlands/town-screen/buildings-area/TZFGdw_0",
           "border": "highlands/town-screen/buildings-border/TOFGdw_0",
           "x": 0,
-          "y": 0,
-          "z": 1
+          "y": 0
         },
         "dwellingLvl2": {
           "animation": "highlands/town-screen/buildings/TBFGdw_1",
           "area": "highlands/town-screen/buildings-area/TZFGdw_1",
           "border": "highlands/town-screen/buildings-border/TOFGdw_1",
           "x": 0,
-          "y": 0,
-          "z": 1
+          "y": 0
         },
         "dwellingLvl3": {
           "animation": "highlands/town-screen/buildings/TBFGdw_2",
@@ -1048,23 +1039,21 @@
           "border": "highlands/town-screen/buildings-border/TOFGdw_2",
           "x": 0,
           "y": 0,
-		  "z": 3
+		  "z": 2
         },
         "dwellingLvl4": {
           "animation": "highlands/town-screen/buildings/TBFGdw_3",
           "area": "highlands/town-screen/buildings-area/TZFGdw_3",
           "border": "highlands/town-screen/buildings-border/TOFGdw_3",
           "x": 0,
-          "y": 0,
-          "z": 2
+          "y": 0
         },
         "dwellingLvl5": {
           "animation": "highlands/town-screen/buildings/TBFGdw_4",
           "area": "highlands/town-screen/buildings-area/TZFGdw_4",
           "border": "highlands/town-screen/buildings-border/TOFGdw_4",
           "x": 0,
-          "y": 0,
-          "z": 2
+          "y": 0
         },
         "dwellingLvl6": {
           "animation": "highlands/town-screen/buildings/TBFGdw_5",
@@ -1072,7 +1061,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGdw_5",
           "x": 0,
           "y": 0,
-          "z": 2
+		  "z": 2
         },
         "dwellingLvl7": {
           "animation": "highlands/town-screen/buildings/TBFGdw_6",
@@ -1080,31 +1069,28 @@
           "border": "highlands/town-screen/buildings-border/TOFGdw_6",
           "x": 0,
           "y": 0,
-          "z": 2
+		  "z": 1
         },
-		"dwellingLvl7B": {
+		"dwellingLvl8": {
           "animation": "highlands/town-screen/buildings/TBFGdw_6E",
           "area": "highlands/town-screen/buildings-area/TZFGdw_6E",
           "border": "highlands/town-screen/buildings-border/TOFGdw_6E",
           "x": 0,
-          "y": 0,
-          "z": 0
+          "y": 0
         },
         "dwellingUpLvl1": {
           "animation": "highlands/town-screen/buildings/TBFGup_0",
           "area": "highlands/town-screen/buildings-area/TZFGup_0",
           "border": "highlands/town-screen/buildings-border/TOFGup_0",
           "x": 0,
-          "y": 0,
-          "z": 2
+          "y": 0
         },
         "dwellingUpLvl2": {
           "animation": "highlands/town-screen/buildings/TBFGup_1",
           "area": "highlands/town-screen/buildings-area/TZFGup_1",
           "border": "highlands/town-screen/buildings-border/TOFGup_1",
           "x": 0,
-          "y": 0,
-          "z": 2
+          "y": 0
         },
         "dwellingUpLvl3": {
           "animation": "highlands/town-screen/buildings/TBFGup_2",
@@ -1112,23 +1098,21 @@
           "border": "highlands/town-screen/buildings-border/TOFGup_2",
           "x": 0,
           "y": 0,
-		  "z": 3
+		  "z": 2
         },
         "dwellingUpLvl4": {
           "animation": "highlands/town-screen/buildings/TBFGup_3",
           "area": "highlands/town-screen/buildings-area/TZFGup_3",
           "border": "highlands/town-screen/buildings-border/TOFGup_3",
           "x": 0,
-          "y": 0,
-          "z": 1
+          "y": 0
         },
         "dwellingUpLvl5": {
           "animation": "highlands/town-screen/buildings/TBFGup_4",
           "area": "highlands/town-screen/buildings-area/TZFGup_4",
           "border": "highlands/town-screen/buildings-border/TOFGup_4",
           "x": 0,
-          "y": 0,
-          "z": 1
+          "y": 0
         },
         "dwellingUpLvl6": {
           "animation": "highlands/town-screen/buildings/TBFGup_5",
@@ -1136,7 +1120,7 @@
           "border": "highlands/town-screen/buildings-border/TOFGup_5",
           "x": 0,
           "y": 0,
-          "z": 1
+		  "z": 2
         },
         "dwellingUpLvl7": {
           "animation": "highlands/town-screen/buildings/TBFGup_6",
@@ -1144,15 +1128,14 @@
           "border": "highlands/town-screen/buildings-border/TOFGup_6",
           "x": 0,
           "y": 0,
-          "z": 1
+		  "z": 1
         },
-		"dwellingUpLvl7B": {
+		"dwellingUpLvl8": {
           "animation": "highlands/town-screen/buildings/TBFGup_6E",
           "area": "highlands/town-screen/buildings-area/TZFGup_6E",
           "border": "highlands/town-screen/buildings-border/TOFGup_6E",
           "x": 0,
-          "y": 0,
-          "z": 0
+          "y": 0
         }
       },
       "tavernVideo": "TAVERN.BIK",
@@ -1185,7 +1168,7 @@
           [ "dwellingLvl5", "dwellingUpLvl5" ],
           [ "dwellingLvl6", "dwellingUpLvl6" ],
           [ "dwellingLvl7", "dwellingUpLvl7" ],
-		  [ "dwellingLvl7B", "dwellingUpLvl7B" ]
+		  [ "dwellingLvl8", "dwellingUpLvl8" ]
         ]
       ]
     }

@@ -1,0 +1,81 @@
+{
+	"liquidFlame" : {
+		"targetType" : "NO_TARGET",
+		"type": "ability", 
+		"name": "Liquid Flame",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 3,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"rampart": 0,
+			"necropolis": 0,
+			"inferno" : 0,
+			"stronghold" : 0,
+			"fortress" : 0,
+			"conflux" : 0
+		},
+		"sounds": {
+			"cast": "FIREWALL"
+		},
+		"levels" : {
+			"base":{
+				"description": "{Liquid Flame}\n\nFire Breath effect.",
+				"cost": 20,
+				"power": 20,
+				"aiValue": 15,
+				"range" : "0",
+				"battleEffects" : {
+					"obstacle" : {
+						"type":"core:obstacle",
+						"hidden" : false,
+						"passable" : true,
+						"trap" : false,
+						
+						"triggerAbility" : "core:fireWallTrigger",
+
+						"turnsRemaining" : 2,
+						"attacker" :{
+							"animation" : "highlandSpells/fireTrigger",
+							"appearAnimation" : "highlandSpells/fireGen1"
+						},
+						"defender" :{
+							"animation" : "highlandSpells/fireTrigger",
+							"appearAnimation" : "highlandSpells/fireGen1"
+						}
+					}
+				}
+			},
+			"none":{},
+			"basic":{},
+			"advanced":{
+			
+				"battleEffects":{
+					"obstacle":{
+						"patchCount" : 6
+					}
+				}
+			},
+			"expert":{
+			
+			
+				"battleEffects":{
+					"obstacle":{
+						"patchCount" : 8
+					}
+				}
+			}
+		},
+		"flags" : {
+			"damage": true,
+			"indifferent": true
+		}
+	}
+}

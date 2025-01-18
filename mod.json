@@ -1,10 +1,10 @@
 {
 	"name" : "Highlands Town",
-	"description" : "New town made by Turbanellos. New townscreen.",
+	"description" : "New town made by Ben Yan. New townscreen.",
 	
-	"author" : "FF Team, mod : Turbanellos",
+	"author" : "FF Team, mod : Ben Yan",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.10",
+	"version" : "2.20",
 	"modType" : "Town",	
 	"conflicts" :
     [
@@ -16,8 +16,9 @@
 	},
 	"changelog" :
     {
+		"2.20"	: ["Fixed and upgraded by Ben Yan, with Magma Dragon and new town screen."],
 		"2.10"	: ["Fixed Polish translation integrity with original game version by Yoshiro."],
-        "2.09"	: ["Updated polish translation"],
+		"2.09"	: ["Updated polish translation"],
 		"2.08"	: ["Polish translation by FallainBlack"],
 		"2.07"	: ["Update to vcmi-1.6 format"],
 		"2.06"	: ["Updated russian translation"],
@@ -116,10 +117,14 @@
 	"artifacts" : [ "config/highlands/dwarftank/tankArt.json" ],
 	"spells" :
 	[
-		"config/highlands/NewOldSpells/nImmolation.json",
+		"config/highlands/NewOldSpells/liquidFlame.json",
 		"config/highlands/NewOldSpells/Barbarity.json",
 		"config/highlands/NewOldSpells/fireVulnerability.json",
 		"config/highlands/NewOldSpells/moat.json"
+	],
+	"skills":
+	[
+		"config/highlands/dwarftank/artillery.json"
 	],
 	 "objects":
     [

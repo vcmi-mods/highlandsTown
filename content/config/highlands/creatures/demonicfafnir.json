@@ -1,26 +1,26 @@
 {
   "demonicfafnir": {
     "name": {
-      "plural": "Nidhoggs",
-      "singular": "Nidhogg"
+      "plural": "Magma Dragons",
+      "singular": "Magma Dragon"
     },
     "advMapAmount": {
  "max" : 8,
  "min" : 3
     },
     "faction": "highlands",
-    "aiValue": 9137,
-    "attack": 26,
+    "aiValue": 5937,
+    "attack": 18,
     "cost": {
-      "gold": 4000,
-      "mercury": 2
+      "gold": 3500,
+      "ore": 2
     },
     "damage": {
- "max" : 50,
- "min" : 40
+ "max" : 45,
+ "min" : 30
     },
-    "defense": 26,
-    "fightValue": 7053,
+    "defense": 22,
+    "fightValue": 5853,
     "graphics": {
       "animation": "highlands/battle/creatures/CFG7U.def",
       "map": "highlands/map/creatures/AVWC163.def",
@@ -35,64 +35,119 @@
     },
     "doubleWide": true,
     "growth": 1,
-    "hitPoints": 275,
+    "hitPoints": 250,
     "level": 7,
     "sound": {
       "attack": "highlands/FG7ATTK.wav",
       "defend": "highlands/FG7DFND.wav",
-      "killed": "highlands/FG7KILL.wav",
-      "move": "highlands/FG7MOVE.wav",
+      "killed": "MAGMKILL.wav",
+      "move": "MAGMMOVE.wav",
       "wince": "highlands/FG7WNCE.wav"
     },
-    "speed": 14,
+    "speed": 7,
     "abilities": 
     {
-      "canFly": 
-      {
-        "type": "FLYING"
-      },
-      "dragon" : 
+      "nonLiving" : 
 			{
-				"type" : "DRAGON_NATURE"
+				"type" : "NON_LIVING"
 			},
-      "fireBreath": {
-        "type": "TWO_HEX_ATTACK_BREATH"
-      },
-	  "basicSlayer" : { "type" : "KING", "val": 0 },
-      "immuneToFire" :
+			"immuneToMind" : 
 			{
-				"type" : "SPELL_SCHOOL_IMMUNITY",
-				"subtype" : "fire"
+				"type" : "MIND_IMMUNITY"
 			},
-			"burningAttack" :
+			"basicSlayer" : { "type" : "KING", "val": 0 },
+			"fireBreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+			"immuneToFire" :
+			{
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+			},
+			"castLiquidFlame" :
 			{
 				"type" : "SPELL_AFTER_ATTACK",
-				"subtype" : "spell.nighoggCurse",
-				"val" : 25,
-				"addInfo": 2
+				"subtype" : "spell.liquidFlame",
+				"val" : 100
 			},
-			"spellImmunity" :
+			"castLiquidFlameStrength" :
 			{
-				"type" : "LEVEL_SPELL_IMMUNITY",
-				"val" : 3
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"fireShield" :
+			{
+				"type" : "FIRE_SHIELD",
+				"val" : 30
+			},
+			"disintegrate":
+			{
+				"type": "DISINTEGRATE",
+			},
+			"waterWeaken" :
+			{
+                 "type" : "SPELL_DAMAGE_REDUCTION",
+                 "val" : -100,
+                 "subtype" : "spellSchool.water",
+            },
+			"attackInLava" : 
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["lava"]
+				} ]
+				
+			},
+			"defenceInLava"  : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["lava"]
+				} ]
+				
+			},
+			"speedInLava" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["lava"]
+				} ]
+				
 			}
-      },
+		},
 		"stackExperience" :
  
 		[
 			{
 				"bonus" :
 				{
-					"subtype" : "attack",
+					"subtype" : "primarySkill.attack",
 					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},	
 			{
 				"bonus" :
 				{
-					"subtype" : "defence",
+					"subtype" : "primarySkill.defence",
 					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},
@@ -110,14 +165,6 @@
 					"type" : "STACKS_SPEED"
 				},
 				"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 2, 3]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			},
 			{
 				"bonus" :

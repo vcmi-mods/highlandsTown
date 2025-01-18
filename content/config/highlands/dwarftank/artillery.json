@@ -1,0 +1,36 @@
+{
+  "core:artillery" : {
+		"base" : {
+			"effects" : {
+				"tankExtra" : {
+					"subtype" : "creature.dwarftank",
+					"type" : "BONUS_DAMAGE_CHANCE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"damagePowerTank" : {
+					"subtype" : "creature.dwarftank",
+					"type" : "BONUS_DAMAGE_PERCENTAGE",
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		},
+		"basic" : {
+			"effects" : {
+				"tankExtra" : { "val" : 0 },
+				"damagePowerTank" : { "val" : 0 }
+			}
+		},
+		"advanced" : {
+			"effects" : {
+				"tankExtra" : { "val" : 75 },
+				"damagePowerTank" : { "val" : 100 }
+			}
+		},
+		"expert" : {
+			"effects" : {
+				"tankExtra" : { "val" : 100 },
+				"damagePowerTank" : { "val" : 150 }
+			}
+		}
+  }
+}

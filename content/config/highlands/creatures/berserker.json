@@ -23,7 +23,7 @@
 			 "max" : 6,
 			 "min" : 4
 		},
-		"defense" : 6,
+		"defense" : 5,
 		"fightValue" : 454,
 		"graphics" :
 		{
@@ -58,11 +58,16 @@
 			{
 				"type" : "FEARLESS"
 			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 2
+			},
 			"barbarity" :
 			{
-				"type" : "SPELL_BEFORE_ATTACK",
+				"type" : "SPELLCASTER",
 				"subtype" : "spell.barbarity",
-				"val" : 10
+				"val" : 0
 			},
       "extraAttack" :
 			{
@@ -75,18 +80,28 @@
 			{
 				"bonus" :
 				{
-					"subtype" : "attack",
+					"subtype" : "primarySkill.attack",
 					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
 			},	
 			{
 				"bonus" :
 				{
-					"subtype" : "defence",
+					"subtype" : "primarySkill.defence",
 					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
 			},
 			{
 				"bonus" :
@@ -102,14 +117,6 @@
 					"type" : "STACKS_SPEED"
 				},
 				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			},
 			{
 				"bonus" :
