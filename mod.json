@@ -52,6 +52,13 @@
 			"translation/highlands/chinese.json"
 		]
 	},
+	"french" : {
+		"name" : "Plateau",
+		"description" : "La ville des hauts plateaux",
+		"translations" : [
+			"translation/highlands/french.json"
+		]
+	},
 	"russian" : {
 		"name" : "Высокогорье",
 		"description" : "Новый город гномов в скадинавском стиле - Высокогорье, находящийся в заснеженных горах.",
