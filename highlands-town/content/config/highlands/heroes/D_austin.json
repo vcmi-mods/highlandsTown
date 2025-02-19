@@ -23,8 +23,6 @@
 			"large" : "highlands/heroes/austin/HPL003DW.bmp",
 			"small" : "highlands/heroes/austin/HPS003DW.bmp"
 		},
-		
-
 		"army" :
 		[
 			{
@@ -33,9 +31,9 @@
 				"min" : 20
 			},
 			{
-				"creature" : "bjaveliner",
-				"max" : 8,
-				"min" : 5
+				"creature" : "ballista",
+				"max" : 1,
+				"min" : 1
 			},
 			{
 				"creature" : "bbrute",
