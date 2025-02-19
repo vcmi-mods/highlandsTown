@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Ben Yan",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.20",
+	"version" : "2.21",
 	"modType" : "Town",	
 	"conflicts" :
     [
@@ -16,6 +16,7 @@
 	},
 	"changelog" :
     {
+		"2.21"	: ["kdmcser fix."],
 		"2.20"	: ["Fixed and upgraded by Ben Yan, with Magma Dragon and new town screen."],
 		"2.10"	: ["Fixed Polish translation integrity with original game version by Yoshiro."],
 		"2.09"	: ["Updated polish translation"],
